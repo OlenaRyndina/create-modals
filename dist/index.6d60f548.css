@@ -1,0 +1,71 @@
+.base-modal.open .modal-window, .base-modal.open .modal-overlay, .base-modal.hide .modal-window, .base-modal.hide .modal-overlay {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.base-modal.open .modal-window {
+  transform: translateY(100px);
+}
+
+.base-modal.open .modal-overlay {
+  background: #00000080;
+}
+
+.base-modal.hide .modal-window {
+  transform: translateY(-200px);
+}
+
+.base-modal.hide .modal-overlay {
+  background: none;
+}
+
+.modal-window, .modal-overlay {
+  opacity: 0;
+  z-index: -1;
+}
+
+.modal-overlay {
+  background: none;
+  transition: background .2s ease-in;
+  position: fixed;
+  inset: 0;
+}
+
+.modal-window {
+  width: 600px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: transform .2s ease-in;
+  transform: translateY(-200px);
+}
+
+.modal-header {
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  padding: 5px 10px;
+  display: flex;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 10px;
+}
+
+.modal-body p {
+  margin: 0 0 5px;
+}
+
+.modal-footer {
+  border-top: 1px solid #eee;
+  padding: 5px 10px;
+}
+
+/*# sourceMappingURL=index.6d60f548.css.map */
