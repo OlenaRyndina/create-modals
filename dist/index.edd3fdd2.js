@@ -55,6 +55,7 @@ $.modal = function(options1) {
             setTimeout(()=>{
                 $modal.classList.remove("hide");
                 closing = false;
+                if (typeof options1.onClose === "function") options1.onClose();
             }, ANIMATION_SPEED);
         }
     };
